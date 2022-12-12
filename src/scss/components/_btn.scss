@@ -1,0 +1,32 @@
+/* stylelint-disable scss/no-global-function-names */
+.btn {
+	padding: 20px 18px 22px 22px;
+	font-family: "Manrope", sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 120%;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	transition: box-shadow 0.3s;
+
+	&:hover {
+		box-shadow: 0 0 11px rgba(255, 255, 255, 0.6);
+	}
+
+	&--white {
+		color: $black-color-2;
+		background-color: $white-color;
+	}
+
+	&--black {
+		border: 2px solid $white-color;
+		padding-top: 18px;
+		padding-bottom: 20px;
+		color: $white-color;
+	}
+
+	@media (max-width: 767px) {
+		padding-top: 14px;
+		padding-bottom: 18px;
+	}
+}
